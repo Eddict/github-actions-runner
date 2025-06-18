@@ -13,7 +13,7 @@
             ],
             "options": {
                 "cwd": "${workspaceFolder}/src"
-            },
+            }
         },
         {
             "label": "build runner layout",
@@ -27,7 +27,42 @@
             ],
             "options": {
                 "cwd": "${workspaceFolder}/src"
-            },
+            }
+        },
+        {
+            "type": "dotnet",
+            "task": "build Debug",
+            "group": "build",
+            "problemMatcher": [ "$msCompile" ],
+            "label": "dotnet: build"
+        },
+        {
+            "type": "dotnet",
+            "task": "test Debug",
+            "group": "test",
+            "problemMatcher": [ "$msCompile" ],
+            "label": "dotnet: test (Debug)"
+        },
+        {
+            "type": "dotnet",
+            "task": "test Release",
+            "group": "test",
+            "problemMatcher": [ "$msCompile" ],
+            "label": "dotnet: test (Release)"
+        },
+        {
+            "type": "dotnet",
+            "task": "build Debug",
+            "group": "build",
+            "problemMatcher": [ "$msCompile" ],
+            "label": "dotnet: build (Debug)"
+        },
+        {
+            "type": "dotnet",
+            "task": "build Release",
+            "group": "build",
+            "problemMatcher": [ "$msCompile" ],
+            "label": "dotnet: build (Release)"
         }
-    ],
+    ]
 }
